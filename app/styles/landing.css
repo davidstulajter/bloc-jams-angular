@@ -57,7 +57,8 @@ body.landing {
 
 .ion-music-note,
 .ion-radio-waves,
-.ion-iphone {
+.ion-iphone
+ {
     color: rgb(223,50,117);
     font-size: 5rem;
 }
