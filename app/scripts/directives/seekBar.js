@@ -33,9 +33,9 @@
           scope.value = newValue;
         });
 
-        // attributes.$observe('max', function(newValue) {
-        // scope.max = newValue;
-        // });
+        //attributes.$observe('max', function(newValue) {
+        //  scope.max = newValue;
+        //});
                 
         /**
         * @function percentString
