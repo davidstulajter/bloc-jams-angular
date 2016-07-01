@@ -78,6 +78,13 @@
         SongPlayer.currentTime = null;
 
         /**
+        * @desc Changes volume 
+        * @type {Number}
+        */
+        SongPlayer.volume = 40;
+
+
+        /**
         * @function play
         * @desc Play current or a new song
         * @param {Object} song
@@ -89,8 +96,7 @@
                 playSong(song);
             } else if (SongPlayer.currentSong === song) {
               if (currentBuzzObject.isPaused()) {
-                  currentBuzzObject.play();
-                  song.playing = true;
+                  playSong(song);
               }
            }
         };
@@ -152,6 +158,18 @@
         if (currentBuzzObject) {
             currentBuzzObject.setTime(time);
         }
+    };
+
+    /**
+    * @function setVolume
+    * @desc sets volume on a song
+    * @param {Number} volume
+    */
+    SongPlayer.setVolume = function(volume) {
+        if (currentBuzzObject) {
+            currentBuzzObject.setVolume(volume);
+        }
+        SongPlayer.volume = volume
     };
     
     return SongPlayer;

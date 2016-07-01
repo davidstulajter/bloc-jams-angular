@@ -34,7 +34,7 @@
         });
 
         // attributes.$observe('max', function(newValue) {
-        //   scope.max = newValue;
+        // scope.max = newValue;
         // });
                 
         /**
@@ -87,8 +87,8 @@
           }
         };
       }
-    }
-  }
+    };
+  };
 
   angular
     .module('blocJams')
